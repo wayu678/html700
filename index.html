@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resgister</title>
+
+    <style>
+        /*สิ่งที่อยู่ตรงนี้มีไว้เเค่ให้ dev อ่าน*/
+        @font-face{
+            font-family: 'Kanit';
+            src: url('./Kanit/Kanit-Regular.ttf');
+        }
+
+        body{
+            font-family: 'Kanit';
+        }
+        #resgister {
+            font-size: 24px;
+            color: blueviolet;
+            font-weight: 800;
+            padding: 10px;
+            margin: 10px;
+            background-color: turquoise;
+            border: 1px blue solid;
+
+        margin-left: 10px;
+        }
+        .header-form{
+            font-weight: 800;
+        }
+        .form{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+ <div id="resgister">Resgister Form</div>
+<span class="header-form" span> 
+ ชื่อ
+ <input class="form" type="text">
+ นามสกุล
+ <span class="header-form" span>  
+ <input class="form" type="text">  <br>
+ อายุ
+ <span class="header-form" span>  
+ <input class="form" type="number" min="0" max="100">
+<div>
+ เพศ
+<div>
+    <input type="radio"> ชาย
+</div>
+<div>
+    <input type="radio"> หญิง
+</div>
+<div>
+    <input type="radio"> ไม่ระบุ
+</div>
+<div>
+<div>
+    สิ่งที่สนใจ
+    <div>
+        <input type="checkbox"> เพลง
+    </div>
+    <div>
+        <input type="checkbox"> หนัง
+    </div>
+    <div>
+        <input type="checkbox"> เกม
+    </div>
+<div>
+    คำอธิบายเพิ่มเติม
+    <div>
+        <textarea ></textarea>
+    </div>
+    <div> 
+
+    </div>
+</div>
+</div>
+<button>ส่งข้อมูล</button>
+
+</body>
+</html>
