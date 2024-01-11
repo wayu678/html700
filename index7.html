@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container .item{
+            background-color: rgb(51, 0, 255);
+        }
+        .main-container .item{
+            background-color:rgb(255, 0, 0) ;
+        }
+        .button{
+            border: 0;
+            background-color: rgb(16, 248, 252);
+            padding: 10px;
+        }
+        .button.active{
+            background-color: rgb(25, 0, 255);
+        }
+        .button.danger{
+            background-color: rgb(255, 0, 0);
+        }
+
+        .item1 + .item2{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    Container
+    <div class="item">
+        Item
+    </div>
+</div>
+<div class="main-container">
+    Container
+    <div class="item">
+        Item
+        <div class="item">
+            Item1
+        </div>
+        <div class="item">
+            Item2
+        </div>
+        <div class="item">
+            Item3
+        </div>
+    </div>
+</div>
+
+<button class="button">ปุ่ม</button>
+<button class="button active">ปุ่ม</button>
+<button class="button danger">ปุ่ม</button>
+
+<!--4. adjacent-->
+<div class="Item1"></div>
+<div class="Item2"></div>
+</body>
+</html>

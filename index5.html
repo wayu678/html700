@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+    .test{
+        color:blue;
+    }
+    .test::first-letter{
+        font-size: 40px;
+    }
+    .test::before{
+        content: '?';
+    }
+    .test::after{
+        content: '?';
+    }
+    .smile::after{
+        content: '😎';
+    }
+    </style>
+
+</head>
+<body>
+    <div class="test smile">test</div>
+</body>
+</html>

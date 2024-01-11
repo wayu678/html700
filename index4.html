@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .container{
+            background-color: fuchsia;
+        }
+        @media screen and (min-width: 768px) {
+            .container{
+                background-color: blue;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        Hello word brekpoint</div>
+    <picture>
+        <source media="(max-width: 768px)"
+        srcset="https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI">
+        <img src="https://fastly.picsum.photos/id/1028/200/200.jpg?hmac=thf3cKyzvjBi3Rnf8-hvYRl8MmEPFPIq1G8nJVvoT4I">
+    </picture>
+</body>
+</html>
