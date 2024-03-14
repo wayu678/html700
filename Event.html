@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>สิ่งที่ชอบ</h2>
+
+    <div id ="content">
+
+    </div>
+    <input type="checkbox" name="interest" value="กีฬา"> กีฬา
+    <input type="checkbox" name="interest" value="เกม"> เกม
+    <input type="checkbox" name="interest" value="วิดิโอ"> วิดิโอ
+    <input type="checkbox" name="interest" value="หนังสือ"> หนังสือ
+    <button onclick="submitinterest()">สิ่งที่สนใจ</button>
+    <script>
+        function sunmitinterest(){
+            //เลือกไปยังcheckboxทั้งหมด
+
+let interesrDOM=document.querySelectoAll('input[name=interest]')
+let contentHTML='<ul>'
+            //เอาvalue ออกมาเฉพาะที่เลือก ใส่Array
+for(let i=0; i<interestDOM.length;i++){
+    if(interesDOM[i].checked){console.log(interesDOM[i].value)}
+            //วนเอาค่าที่เลือกใส่htmlกลับไป
+        contentHTML+='</ul>'
+        console.log(contentHTML)
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button oncliked="clikedItem()">ปุ่มที่1</button>
+    <button id="thisbutton">ปุ่มที่2</button>
+ <script>
+    let thisbuttonDOM= document.getElementById('thisbutton')
+    thisbuttonDOM.addEventListener('click',function(){
+        console.log('ปุ่มที่2 cliked')
+    })
+  function cilkedItem(){
+    console.log('ปุ่่มที่1 cliked')
+  }
+</script>     
+</body>
+</html>

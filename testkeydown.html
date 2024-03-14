@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    ชื่อจริง<input type="text" name="fristname" onkeyup="changeFristname()">
+    
+    <script>
+        function changeFristname() {
+            //จิ้มไปยัinput fristname
+            let fristnameDOM=document.queryselector('input[name=fristname]')
+            //เอาvalueของfistname ออกมา
+            console.log('chengeFristname',fristnameDOM.value);
+        }
+    </script>
+</body>
+</html>
